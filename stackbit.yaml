@@ -1,0 +1,23 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+dataDir: ankita_project-main
+models:
+  jsconfig:
+    type: data
+    label: Jsconfig
+    file: jsconfig.json
+    fields:
+      - type: object
+        name: compilerOptions
+        label: Compiler Options
+        fields:
+          - type: string
+            name: baseUrl
+            label: Base Url
+      - type: list
+        name: include
+        label: Include
+        items:
+          type: string
